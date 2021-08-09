@@ -3,8 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"JCC_MhSubstance_728x90_atlas_P_1", frames: [[0,1202,232,87],[0,0,600,1200]]},
-		{name:"JCC_MhSubstance_728x90_atlas_NP_1", frames: [[0,0,1456,180]]}
+		{name:"JCC_MhSubstance_728x90_atlas_P_1", frames: [[0,0,232,87]]},
+		{name:"JCC_MhSubstance_728x90_atlas_NP_1", frames: [[0,0,1456,180],[0,182,1456,180]]}
 ];
 
 
@@ -28,6 +28,13 @@ lib.ssMetadata = [
 
 
 
+(lib._728x902x = function() {
+	this.initialize(ss["JCC_MhSubstance_728x90_atlas_NP_1"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.Buttonshad = function() {
 	this.initialize(ss["JCC_MhSubstance_728x90_atlas_P_1"]);
 	this.gotoAndStop(0);
@@ -35,16 +42,9 @@ lib.ssMetadata = [
 
 
 
-(lib.JCC_bkgd_600x1200 = function() {
-	this.initialize(ss["JCC_MhSubstance_728x90_atlas_P_1"]);
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.MhSubstance_728x90 = function() {
 	this.initialize(ss["JCC_MhSubstance_728x90_atlas_NP_1"]);
-	this.gotoAndStop(0);
+	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -1053,8 +1053,8 @@ if (reversed == null) { reversed = false; }
 	mask_1.setTransform(364.0038,44.9987);
 
 	// bkgd
-	this.instance_2 = new lib.JCC_bkgd_600x1200();
-	this.instance_2.setTransform(196,195,0.5,0.5,-89.9913);
+	this.instance_2 = new lib._728x902x();
+	this.instance_2.setTransform(0,0,0.5,0.5);
 
 	var maskedShapeInstanceList = [this.instance_2];
 
