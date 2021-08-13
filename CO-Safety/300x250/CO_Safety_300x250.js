@@ -4,7 +4,7 @@ var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"CO_Safety_300x250_atlas_P_1", frames: [[0,0,232,87]]},
-		{name:"CO_Safety_300x250_atlas_NP_1", frames: [[0,0,600,500]]}
+		{name:"CO_Safety_300x250_atlas_NP_1", frames: [[0,0,300,250]]}
 ];
 
 
@@ -35,7 +35,7 @@ lib.ssMetadata = [
 
 
 
-(lib.MhSubstance_300x250 = function() {
+(lib.safety_img1_300x250 = function() {
 	this.initialize(ss["CO_Safety_300x250_atlas_NP_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -921,15 +921,15 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(309));
 
 	// PIC
-	this.instance_8 = new lib.MhSubstance_300x250();
-	this.instance_8.setTransform(0,0,0.5,0.5);
+	this.instance_8 = new lib.safety_img1_300x250();
+	this.instance_8.setTransform(0,1);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(309));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(57.1,124.5,243.4,126);
+p.nominalBounds = new cjs.Rectangle(57.1,124.5,243.4,126.5);
 // library properties:
 lib.properties = {
 	id: '0957C5EC3B874C629166840920B09671',
