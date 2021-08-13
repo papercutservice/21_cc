@@ -3,8 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"CO_SchoolisBack_320x50_atlas_P_1", frames: [[0,0,232,87]]},
-		{name:"CO_SchoolisBack_320x50_atlas_NP_1", frames: [[0,0,320,50]]}
+		{name:"CO_KidsProcedures_320x50_atlas_P_1", frames: [[0,0,232,87]]},
+		{name:"CO_KidsProcedures_320x50_atlas_NP_1", frames: [[0,0,320,50]]}
 ];
 
 
@@ -29,14 +29,14 @@ lib.ssMetadata = [
 
 
 (lib.Buttonshad = function() {
-	this.initialize(ss["CO_SchoolisBack_320x50_atlas_P_1"]);
+	this.initialize(ss["CO_KidsProcedures_320x50_atlas_P_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.kp_img_320x50 = function() {
-	this.initialize(ss["CO_SchoolisBack_320x50_atlas_NP_1"]);
+	this.initialize(ss["CO_KidsProcedures_320x50_atlas_NP_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -765,7 +765,7 @@ if (reversed == null) { reversed = false; }
 
 
 // stage content:
-(lib.CO_SchoolisBack_320x50 = function(mode,startPosition,loop,reversed) {
+(lib.CO_KidsProcedures_320x50 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -910,8 +910,8 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CO_SchoolisBack_320x50_atlas_P_1.png", id:"CO_SchoolisBack_320x50_atlas_P_1"},
-		{src:"images/CO_SchoolisBack_320x50_atlas_NP_1.jpg", id:"CO_SchoolisBack_320x50_atlas_NP_1"}
+		{src:"images/CO_KidsProcedures_320x50_atlas_P_1.png", id:"CO_KidsProcedures_320x50_atlas_P_1"},
+		{src:"images/CO_KidsProcedures_320x50_atlas_NP_1.jpg", id:"CO_KidsProcedures_320x50_atlas_NP_1"}
 	],
 	preloads: []
 };
