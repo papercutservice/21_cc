@@ -880,9 +880,10 @@ if (reversed == null) { reversed = false; }
 	// HEAD1a
 	this.instance_3 = new lib.HEAD1a();
 	this.instance_3.setTransform(145.5,349,1,1,0,0,0,0,24);
+	this.instance_3.alpha = 0;
 	this.instance_3._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(4).to({_off:false},0).to({alpha:0},6).wait(60).to({alpha:1},0).to({y:323.65},7).wait(138).to({alpha:0},7).to({_off:true},1).wait(86));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(4).to({_off:false},0).to({alpha:1},6).wait(60).to({y:323.65},7).wait(138).to({alpha:0},7).to({_off:true},1).wait(86));
 
 	// HEAD1b
 	this.instance_4 = new lib.HEAD1b();
