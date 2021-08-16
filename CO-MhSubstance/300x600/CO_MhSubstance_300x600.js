@@ -4,7 +4,7 @@ var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"CO_MhSubstance_300x600_atlas_P_1", frames: [[0,0,232,87]]},
-		{name:"CO_MhSubstance_300x600_atlas_NP_1", frames: [[0,0,600,1200]]}
+		{name:"CO_MhSubstance_300x600_atlas_NP_1", frames: [[0,0,600,1072]]}
 ];
 
 
