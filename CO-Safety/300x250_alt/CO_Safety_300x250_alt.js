@@ -925,16 +925,18 @@ if (reversed == null) { reversed = false; }
 	this.instance_7.setTransform(149.75,183.95,1,1,0,0,0,0,66.1);
 	this.instance_7.alpha = 0.6992;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(326));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(138).to({alpha:0.8008},0).wait(188));
 
 	// PIC
 	this.instance_8 = new lib.safety_img1_300x250();
 	this.instance_8.setTransform(0,1);
 
 	this.instance_9 = new lib.safety_img2_300x250();
-	this.instance_9.setTransform(0,1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8}]}).to({state:[{t:this.instance_9}]},138).wait(188));
+	this.instance_10 = new lib.safety_img2_300x250();
+	this.instance_10.setTransform(0,1);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8}]}).to({state:[{t:this.instance_10},{t:this.instance_9}]},138).wait(188));
 
 	this._renderFirstFrame();
 
