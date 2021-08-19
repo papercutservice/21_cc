@@ -3,8 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"CO_Safety_300x250_alt_atlas_P_1", frames: [[0,0,232,87]]},
-		{name:"CO_Safety_300x250_alt_atlas_NP_1", frames: [[0,0,300,250],[0,252,300,250]]}
+		{name:"CO_Safety_300x250_atlas_P_1", frames: [[0,0,232,87]]},
+		{name:"CO_Safety_300x250_atlas_NP_1", frames: [[0,0,300,250]]}
 ];
 
 
@@ -29,22 +29,15 @@ lib.ssMetadata = [
 
 
 (lib.Buttonshad = function() {
-	this.initialize(ss["CO_Safety_300x250_alt_atlas_P_1"]);
+	this.initialize(ss["CO_Safety_300x250_atlas_P_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.safety_img1_300x250 = function() {
-	this.initialize(ss["CO_Safety_300x250_alt_atlas_NP_1"]);
+	this.initialize(ss["CO_Safety_300x250_atlas_NP_1"]);
 	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.safety_img2_300x250 = function() {
-	this.initialize(ss["CO_Safety_300x250_alt_atlas_NP_1"]);
-	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -825,7 +818,7 @@ if (reversed == null) { reversed = false; }
 
 
 // stage content:
-(lib.CO_Safety_300x250_alt = function(mode,startPosition,loop,reversed) {
+(lib.CO_Safety_300x250 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -836,7 +829,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [0,325];
+	this.actionFrames = [0,308];
 	// timeline functions:
 	this.frame_0 = function() {
 		//if(!this.alreadyyExecuted){
@@ -848,7 +841,7 @@ if (reversed == null) { reversed = false; }
 		//gotoAndPlay(2);
 		//}
 	}
-	this.frame_325 = function() {
+	this.frame_308 = function() {
 		//if(!this.alreadyExecuted){
 		//this.alreadyExecuted=true;
 		//this.loopNum=1;
@@ -861,39 +854,39 @@ if (reversed == null) { reversed = false; }
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(325).call(this.frame_325).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(308).call(this.frame_308).wait(1));
 
 	// border
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f().s("#000000").ss(1,2,0,3).p("A3WzcMAutAAAMAAAAm5MgutAAAg");
 	this.shape.setTransform(150,125);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(326));
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(309));
 
 	// HS logo
 	this.instance = new lib.HS_logowhite();
 	this.instance.setTransform(149.9,217.75,0.31,0.31,0,0,0,0.7,71.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(326));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(309));
 
 	// CO logo
 	this.instance_1 = new lib.CO_v_white();
 	this.instance_1.setTransform(240.2,219.2,0.35,0.35,0,0,0,0.1,55.6);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(326));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(309));
 
 	// CTA
 	this.instance_2 = new lib.BUTTON();
 	this.instance_2.setTransform(-27.3,216.95,0.76,0.76,0,0,0,-10.4,3.9);
 	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(310).to({_off:false},0).to({x:52.7},15,cjs.Ease.quadOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(293).to({_off:false},0).to({x:52.7},15,cjs.Ease.quadOut).wait(1));
 
 	// BKGD-orange
 	this.instance_3 = new lib.BKGD();
 	this.instance_3.setTransform(150,241.25,1,0.2639,0,0,0,0,216.9);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(326));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(309));
 
 	// HEAD1a
 	this.instance_4 = new lib.HEAD1a();
@@ -901,7 +894,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_4.alpha = 0;
 	this.instance_4._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(5).to({_off:false},0).to({alpha:1},10).wait(104).to({alpha:0},8,cjs.Ease.quadInOut).to({_off:true},1).wait(198));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(5).to({_off:false},0).to({alpha:1},10).wait(104).to({alpha:0},8,cjs.Ease.quadInOut).to({_off:true},1).wait(181));
 
 	// HEAD2
 	this.instance_5 = new lib.HEAD2();
@@ -910,7 +903,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_5.shadow = new cjs.Shadow("rgba(0,163,181,1)",0,0,0);
 	this.instance_5._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(150).to({_off:false},0).to({alpha:1},8).wait(95).to({alpha:0},8).to({_off:true},1).wait(64));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(133).to({_off:false},0).to({alpha:1},8).wait(95).to({alpha:0},8).to({_off:true},1).wait(64));
 
 	// HEAD3
 	this.instance_6 = new lib.HEAD3();
@@ -918,25 +911,20 @@ if (reversed == null) { reversed = false; }
 	this.instance_6.alpha = 0;
 	this.instance_6._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(267).to({_off:false},0).to({alpha:1},8).wait(51));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(250).to({_off:false},0).to({alpha:1},8).wait(51));
 
 	// BKGD-blue
 	this.instance_7 = new lib.BKGDblue();
 	this.instance_7.setTransform(149.75,183.95,1,1,0,0,0,0,66.1);
 	this.instance_7.alpha = 0.6992;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(138).to({alpha:0.8008},0).wait(188));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(309));
 
 	// PIC
 	this.instance_8 = new lib.safety_img1_300x250();
 	this.instance_8.setTransform(0,1);
 
-	this.instance_9 = new lib.safety_img2_300x250();
-
-	this.instance_10 = new lib.safety_img2_300x250();
-	this.instance_10.setTransform(0,1);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8}]}).to({state:[{t:this.instance_10},{t:this.instance_9}]},138).wait(188));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(309));
 
 	this._renderFirstFrame();
 
@@ -951,8 +939,8 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CO_Safety_300x250_alt_atlas_P_1.png", id:"CO_Safety_300x250_alt_atlas_P_1"},
-		{src:"images/CO_Safety_300x250_alt_atlas_NP_1.jpg", id:"CO_Safety_300x250_alt_atlas_NP_1"}
+		{src:"images/CO_Safety_300x250_atlas_P_1.png", id:"CO_Safety_300x250_atlas_P_1"},
+		{src:"images/CO_Safety_300x250_atlas_NP_1.jpg", id:"CO_Safety_300x250_atlas_NP_1"}
 	],
 	preloads: []
 };
