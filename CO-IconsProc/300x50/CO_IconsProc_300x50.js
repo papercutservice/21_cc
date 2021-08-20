@@ -840,7 +840,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.CO_v_color, new cjs.Rectangle(-126.7,-7.3,264.2,124.39999999999999), null);
+}).prototype = getMCSymbolPrototype(lib.CO_v_color, new cjs.Rectangle(-127.9,-9.9,265.4,125), null);
 
 
 (lib.BUTTON2 = function(mode,startPosition,loop,reversed) {
@@ -1302,7 +1302,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [0,441];
+	this.actionFrames = [0,468];
 	// timeline functions:
 	this.frame_0 = function() {
 		//if(!this.alreadyyExecuted){
@@ -1314,7 +1314,7 @@ if (reversed == null) { reversed = false; }
 		//gotoAndPlay(2);
 		//}
 	}
-	this.frame_441 = function() {
+	this.frame_468 = function() {
 		//if(!this.alreadyExecuted){
 		//this.alreadyExecuted=true;
 		//this.loopNum=1;
@@ -1327,28 +1327,28 @@ if (reversed == null) { reversed = false; }
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(441).call(this.frame_441).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(468).call(this.frame_468).wait(1));
 
 	// border
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f().s("#000000").ss(1,1,1).p("A3Wj0MAutAAAIAAHpMgutAAAg");
 	this.shape.setTransform(150,25);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(442));
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(469));
 
 	// ICON1
 	this.instance = new lib.ICONstethteal();
 	this.instance.setTransform(59.5,48.25,1.2449,1.2449);
 	this.instance.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:23.25,alpha:1,mode:"synched",startPosition:0},39,cjs.Ease.quartOut).to({y:-1.7,alpha:0,mode:"independent"},40,cjs.Ease.quartIn).to({_off:true},1).wait(362));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:23.25,alpha:1,mode:"synched",startPosition:0},42,cjs.Ease.quartOut).to({y:-1.7,alpha:0,mode:"independent"},44,cjs.Ease.quartIn).to({_off:true},1).wait(382));
 
 	// HEAD1
 	this.instance_1 = new lib.HEAD1();
 	this.instance_1.setTransform(97.05,34,1,1,0,0,0,0,24);
 	this.instance_1.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({alpha:1},8).wait(54).to({alpha:0},8).to({_off:true},1).wait(371));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({alpha:1},8).wait(61).to({alpha:0},8).to({_off:true},1).wait(391));
 
 	// ICON2
 	this.instance_2 = new lib.ICONbabyblue();
@@ -1356,7 +1356,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_2.alpha = 0;
 	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(71).to({_off:false},0).to({y:23.25,alpha:1,mode:"synched",startPosition:0},39,cjs.Ease.quartOut).to({y:-1.7,alpha:0,mode:"independent"},41,cjs.Ease.quartIn).to({_off:true},1).wait(290));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(78).to({_off:false},0).to({y:23.25,alpha:1,mode:"synched",startPosition:0},43,cjs.Ease.quartOut).to({y:-1.7,alpha:0,mode:"independent"},44,cjs.Ease.quartIn).to({_off:true},1).wait(303));
 
 	// HEAD2
 	this.instance_3 = new lib.HEAD2();
@@ -1365,7 +1365,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_3.shadow = new cjs.Shadow("rgba(0,163,181,1)",0,0,0);
 	this.instance_3._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(71).to({_off:false},0).to({alpha:1},8).wait(56).to({alpha:0},8).to({_off:true},1).wait(298));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(78).to({_off:false},0).to({alpha:1},8).wait(63).to({alpha:0},8).to({_off:true},1).wait(311));
 
 	// ICON3
 	this.instance_4 = new lib.ICONshotteal();
@@ -1373,7 +1373,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_4.alpha = 0;
 	this.instance_4._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(143).to({_off:false},0).to({y:23.25,alpha:1,mode:"synched",startPosition:0},38,cjs.Ease.quartOut).to({y:-1.7,alpha:0,mode:"independent"},42,cjs.Ease.quartIn).to({_off:true},1).wait(218));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(157).to({_off:false},0).to({y:23.25,alpha:1,mode:"synched",startPosition:0},41,cjs.Ease.quartOut).to({y:-1.7,alpha:0,mode:"independent"},46,cjs.Ease.quartIn).to({_off:true},1).wait(224));
 
 	// HEAD3
 	this.instance_5 = new lib.HEAD3();
@@ -1381,7 +1381,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_5.alpha = 0;
 	this.instance_5._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(143).to({_off:false},0).to({alpha:1},8).wait(56).to({alpha:0},8).to({_off:true},1).wait(226));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(157).to({_off:false},0).to({alpha:1},8).wait(63).to({alpha:0},8).to({_off:true},1).wait(232));
 
 	// ICON4
 	this.instance_6 = new lib.ICONtoothblue();
@@ -1389,7 +1389,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_6.alpha = 0;
 	this.instance_6._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(215).to({_off:false},0).to({y:23.25,alpha:1,mode:"synched",startPosition:0},38,cjs.Ease.quartOut).to({y:-1.7,alpha:0,mode:"independent"},40,cjs.Ease.quartIn).to({_off:true},1).wait(148));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(236).to({_off:false},0).to({y:23.25,alpha:1,mode:"synched",startPosition:0},41,cjs.Ease.quartOut).to({y:-1.7,alpha:0,mode:"independent"},44,cjs.Ease.quartIn).to({_off:true},1).wait(147));
 
 	// HEAD4
 	this.instance_7 = new lib.HEAD4();
@@ -1397,7 +1397,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_7.alpha = 0;
 	this.instance_7._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(215).to({_off:false},0).to({alpha:1},8).wait(56).to({alpha:0},8).to({_off:true},1).wait(154));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(236).to({_off:false},0).to({alpha:1},8).wait(63).to({alpha:0},8).to({_off:true},1).wait(153));
 
 	// CO logo
 	this.instance_8 = new lib.CO_v_color();
@@ -1405,7 +1405,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_8.alpha = 0;
 	this.instance_8._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(287).to({_off:false},0).to({y:26.3,alpha:1},35,cjs.Ease.quartOut).wait(120));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(329).to({_off:false},0).to({y:26.3,alpha:1},35,cjs.Ease.quartOut).wait(105));
 
 	// HEAD5
 	this.instance_9 = new lib.HEAD5();
@@ -1413,14 +1413,14 @@ if (reversed == null) { reversed = false; }
 	this.instance_9.alpha = 0;
 	this.instance_9._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(287).to({_off:false},0).to({alpha:1},8).wait(127).to({alpha:0},10).to({_off:true},1).wait(9));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(329).to({_off:false},0).to({alpha:1},8).wait(112).to({alpha:0},10).to({_off:true},1).wait(9));
 
 	// StripFade
 	this.instance_10 = new lib.StripFade2();
 	this.instance_10.setTransform(72.1,79.15,0.4055,0.4055,0,0,0,272.6,57.7);
 	this.instance_10.alpha = 0.5;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_10).to({regY:57.6,y:-38.05},341).wait(101));
+	this.timeline.addTween(cjs.Tween.get(this.instance_10).to({regY:57.6,y:-38.05},368).wait(101));
 
 	// HS logo
 	this.instance_11 = new lib.HS_logo();
@@ -1428,7 +1428,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_11.alpha = 0;
 	this.instance_11._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(434).to({_off:false},0).to({alpha:1},7).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(461).to({_off:false},0).to({alpha:1},7).wait(1));
 
 	// CTA
 	this.instance_12 = new lib.BUTTON2();
@@ -1436,12 +1436,12 @@ if (reversed == null) { reversed = false; }
 	this.instance_12.alpha = 0;
 	this.instance_12._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(434).to({_off:false},0).to({alpha:1},7).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(461).to({_off:false},0).to({alpha:1},7).wait(1));
 
 	// bg_updated
 	this.instance_13 = new lib.icon_bg_300x50();
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(442));
+	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(469));
 
 	this._renderFirstFrame();
 
