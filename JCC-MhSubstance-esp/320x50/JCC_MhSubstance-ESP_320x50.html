@@ -11,13 +11,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>JCC_MhSubstance-ESP_320x50</title>
+<title>JCC_MhSubstance-esp_320x50</title>
 <!-- write your code here -->
 <meta name="ad.size" content="width=320,height=50">
 <script type="text/javascript">
 var clickTag = "https://www.jacksoncareconnect.org/servicios"; </script>
-<script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js"></script>
-<script src="JCC_MhSubstance-ESP_320x50.js"></script>
+<!-- DCM/Google/DoubleClick: Change external scripts URL to <script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2015.11.26_54e1c3722102182bb133912ad4442e19_min.js"></script> -->
+<!-- Remove garbage after .js -->
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="JCC_MhSubstance-esp_320x50.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -45,7 +47,7 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	exportRoot = new lib.JCC_MhSubstanceESP_320x50();
+	exportRoot = new lib.JCC_MhSubstanceesp_320x50();
 	stage = new lib.Stage(canvas);	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
