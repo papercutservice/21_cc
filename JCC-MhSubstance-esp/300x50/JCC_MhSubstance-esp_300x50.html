@@ -16,9 +16,7 @@
 <meta name="ad.size" content="width=300,height=50">
 <script type="text/javascript">
 var clickTag = "https://www.jacksoncareconnect.org/servicios"; </script>
-<!-- DCM/Google/DoubleClick: Change external scripts URL to <script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2015.11.26_54e1c3722102182bb133912ad4442e19_min.js"></script> -->
-<!-- Remove garbage after .js -->
-<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js"></script>
 <script src="JCC_MhSubstance-esp_300x50.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
@@ -35,8 +33,8 @@ function init() {
 	loader.loadManifest(lib.properties.manifest);
 }
 function handleFileLoad(evt, comp) {
-	var images=comp.getImages();	
-	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+	var images=comp.getImages();
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }
 }
 function handleComplete(evt,comp) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
@@ -48,15 +46,15 @@ function handleComplete(evt,comp) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
 	exportRoot = new lib.JCC_MhSubstanceesp_300x50();
-	stage = new lib.Stage(canvas);	
+	stage = new lib.Stage(canvas);
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
 		createjs.Ticker.framerate = lib.properties.fps;
 		createjs.Ticker.addEventListener("tick", stage);
-	}	    
+	}
 	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
